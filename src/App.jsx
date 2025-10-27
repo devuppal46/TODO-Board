@@ -6,7 +6,7 @@ function App() {
       <h1>ToDo - APP</h1>
       <p>hello just for commit hehehehehe</p>
       <p>playing with new branch</p>
-      <h1>concept to learn stashing</h1>
+      <h1>concept to learn stashingg</h1>
       <Input/>
     </>
   )
