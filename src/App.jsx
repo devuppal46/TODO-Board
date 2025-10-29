@@ -1,13 +1,18 @@
-import React from 'react'
+import React , {useState} from 'react'
 import Input from "./components/Input.jsx"
+
 function App() {
+  const [taskList , setTaskList] = useState([]);
+  console.log(taskList);
   return (
     <>
       <h1>ToDo - APP</h1>
-      <p>hello just for commit hehehehehe</p>
-      <p>playing with new branch</p>
-      <h1>concept to learn stashingg</h1>
-      <Input/>
+      <Input taskList={taskList} setTaskList={setTaskList}/>
+      <div>
+        {taskList.map((task ,index) =>
+          <li key={index}>{task}</li>
+        )}
+      </div>
     </>
   )
 }
